@@ -1,0 +1,22 @@
+1. I finished everything
+2. Didn't use banned STL components
+3. No known bugs
+4. This is how I tested RadixTree:
+
+    s.insert("dog", "dummy");
+    s.insert("dogskin", "dummy");
+    s.insert("dogsk", "dummy");
+    s.insert("dogskid", "dummy");
+    s.insert("cat", "dummy");
+    s.insert("cat", "dummyy");
+    s.insert("Claw", "dummy");
+
+    s.insert("Lima@icloud.com", "dummy"); // these were causing problems in my actual project
+    s.insert("LogChristia9@icloud.com", "dummy");
+    s.insert("LogCo0@comcast.net", "dummy");
+
+And then I searched to make sure I can find all of them.
+
+I also tested my other classes by duplicating members' attribute values (in members.txt) to make sure the duplicates aren't counted as another match ect.
+
+I looked up a bunch of emails using my script as well as the provided executable and copy pasted the results into a text comparison website to make sure it was identical. If there was a discrepancy, I would use breakpoints to step through the code to see where	 it went wrong.
